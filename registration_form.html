@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .align {
+                width: 300px;
+        }
+        .align input {
+                width:100%;
+               
+        }
+        .align * {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <h1> REGISTRATION FORM </h1>
+    <div class ="align">
+    <form>
+       First Name : <input type ="text" name ="firstname" pattern =[A-Za-z]{1,25} title="only alphabets and maximum 25 characters" placeholder="Enter First Name"><br>
+      <br> Last Name : <input type ="text" name ="lastname" pattern =[A-Za-z]{1,25} title="only alphabets and maximum 25 characters" placeholder="Enter Last Name"><br>
+      <br> Address : <br><textarea name="address" maxlength="50" > </textarea><br>
+      <br> Email Id : <input type="email" name="email" placeholder="something@something.com"><br>
+      <br> City :<br>
+         <select>
+             <option>--Select--</option>
+             <option value="Hyderabad">HYDERABAD</option>
+             <option value="chennai">CHENNAI</option>
+             <option value="Banglore">BANGLORE</option>
+             <option value="Mumbai">MUMBAI</option>
+             <option value="Kolkata">KOLKATA</option>
+         </select><br>
+         <br> State :<br>
+             <select>
+                 <option>--Select--</option>
+                <option value="Andhra Pradesh">ANDHRA PRADESH</option>
+                <option value="Tamilnadu">TAMILNADU</option>
+                <option value="Karnataka">KARNATAKA</option>
+                <option value="Maharashtra">MAHARASHTRA</option>
+                <option value="west Bengal">WEST BENGAL</option>
+             </select><br>
+          <br> University Branch Name : <input type ="text" name ="university branch name" value="CSE" readonly><br>
+          <br> Phone Number : <input type ="text" name ="Phonenumber" pattern =[0-9]{10} title="only numbers and maximum 10 characters"><br>
+          <br> Enrolled Course : <input type ="text" name ="Enrolledcourse" pattern =[A-za-z0-9]{5}><br>
+          <br> Date Of Test : <input type ="date" name ="Dateoftest"><br>
+          <br> Marks Obtained : <input type ="number" name ="marksobtained" min="50" max="100"><br>
+          <br> Submit : <input type ="submit" value ="submit"><br>
+        </div>
+
+
+
+    </form>
+</body>
+</html>
